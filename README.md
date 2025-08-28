@@ -1,8 +1,10 @@
 <a id="readme-top"> </a>
 
 # 🎮 Connect Four – Client & Server Project
+<p align= "center"><img width="300" alt="ConnectFourIcon" src="https://github.com/user-attachments/assets/0a726520-715e-4b81-9ff7-d85ccf635b56" /></p>
 
-![App Preview](PUT-YOUR-IMAGE-URL-HERE)
+
+
 
 ---
 
@@ -16,24 +18,27 @@ The project demonstrates **full-stack development** in C#, combining a desktop a
 
 ---
 
-## 🎥 Demo
-[▶️ Watch on YouTube](PUT-YOUTUBE-LINK-HERE)
 
----
 
 ## 📸 Screenshots
-_Add screenshots of your app here:_
 
-- Login Screen  
-- Game Board (Client)  
-- Replay Mode  
-- Razor Pages (Server Dashboard)
+- Login Screen (Client)
+<img width="300" height="632" alt="LoginForm" src="https://github.com/user-attachments/assets/da147442-1dd6-43df-baae-fdd86a394e42" />
 
-<img src="https://picsum.photos/200" alt="Screenshot 1" width="250" style="border-radius: 10px;">
-<img src="https://picsum.photos/200" alt="Screenshot 2" width="250" style="border-radius: 10px;">
-<img src="https://picsum.photos/200" alt="Screenshot 3" width="250" style="border-radius: 10px;">
+- Game Board (Client)
+<img width="350" alt="Game" src="https://github.com/user-attachments/assets/00ef2238-177b-411b-9755-d2df3087a0b7" />
 
+- Replay List (Client)
+<img width="300" alt="ReplayForm" src="https://github.com/user-attachments/assets/6d21adc4-aa8d-4abe-848e-9d43d1f8c44a" />
 
+- Replay Display (Client)
+<img width="300" alt="ReplayDisplay" src="https://github.com/user-attachments/assets/e7c0215e-e428-4cbe-af75-ebec1a75c938" />
+
+- Razor Pages - Home Screen (Server Dashboard)
+<img width="650"  alt="HomeScreen" src="https://github.com/user-attachments/assets/39a8470b-438b-4039-9afc-43e5f71cb548" />
+
+- Razor Pages - ScoreBoard (Server Dashboard)
+<img width="650" alt="PlayersData" src="https://github.com/user-attachments/assets/32cdaeba-94bd-4215-b13d-abc6ed649d63" />
 
 ---
 
