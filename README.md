@@ -73,6 +73,32 @@ _Add screenshots of your app here:_
 
 ---
 
+## 🏗 Architecture
+
+```mermaid
+flowchart LR
+    subgraph Client[🎮 Client - WinForms App]
+        UI[UI - Game Board & Controls]
+        Replay[Replay Saved Games]
+    end
+
+    subgraph Server[🖥 Server - ASP.NET Core]
+        Razor[Razor Pages - Web UI]
+        API[Web API - REST Endpoints]
+    end
+
+    subgraph Database[🗄 SQL Server LocalDB]
+        Players[(Players Table)]
+        Games[(Games Table)]
+        Moves[(Moves Table)]
+    end
+
+    UI -->|HTTP Requests| API
+    Replay -->|Local Saved Games| UI
+    Razor --> Database
+    API --> Database
+```
+
 <h2><img src="https://github.com/YosiBs/Gotcha-App/assets/105666011/9f5d6637-b1e1-4037-8f60-64388e5ab109" alt=pic5 width="40" height="40"> Authors</h2>
 
 <ul>
