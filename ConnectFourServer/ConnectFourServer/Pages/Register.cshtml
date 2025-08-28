@@ -1,0 +1,90 @@
+﻿@page
+@model ConnectFourServer.Pages.RegisterModel
+@{
+    ViewData["Title"] = "Player Registration";
+}
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-primary">@ViewData["Title"]</h1>
+        <p class="lead">Join the game and let the fun begin 🎯</p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>@TempData["SuccessMessage"]</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form method="post" novalidate>
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="NewPlayer.Name" class="form-label fw-semibold"></label>
+                            <input asp-for="NewPlayer.Name" class="form-control" placeholder="Enter your name" />
+                            <span asp-validation-for="NewPlayer.Name" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NewPlayer.Phone" class="form-label fw-semibold"></label>
+                            <input asp-for="NewPlayer.Phone" class="form-control" placeholder="e.g. 050-1234567" />
+                            <span asp-validation-for="NewPlayer.Phone" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NewPlayer.Country" class="form-label fw-semibold"></label>
+                            <select asp-for="NewPlayer.Country" class="form-select">
+                                <option value="">🌍 Choose Country</option>
+                                <option>Israel</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>Canada</option>
+                                <option>Germany</option>
+                                <option>France</option>
+                                <option>India</option>
+                                <option>Brazil</option>
+                                <option>Australia</option>
+                                <option>Japan</option>
+                                <option>South Korea</option>
+                                <option>South Africa</option>
+                                <option>Mexico</option>
+                                <option>Italy</option>
+                                <option>Spain</option>
+                            </select>
+                            <span asp-validation-for="NewPlayer.Country" class="text-danger small"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NewPlayer.Identifier" class="form-label fw-semibold"></label>
+                            <input asp-for="NewPlayer.Identifier" class="form-control" type="number" min="1" max="1000" placeholder="Your player ID (1–1000)" />
+                            <span asp-validation-for="NewPlayer.Identifier" class="text-danger small"></span>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-lg btn-primary">🎮 Register Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        setTimeout(() => {
+            const alert = document.querySelector('.alert-success');
+            if (alert) {
+                alert.classList.remove('show');
+                alert.classList.add('fade');
+            }
+        }, 4000); // hide after 4 seconds
+    </script>
+}

@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\pages\\players.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\pages\\players.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\pages\\players.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\pages\\players.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\pages\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\models\\movedecisionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\models\\movedecisionmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\models\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\models\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\models\\gamedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\models\\gamedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|c:\\users\\yosibenshushan\\desktop\\connectfour\\connectfourserver\\connectfourserver\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8010DF05-2156-4899-8CB0-30568B36E21F}|ConnectFourServer\\ConnectFourServer.csproj|solutionrelative:connectfourserver\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Index.cshtml",
+              "RelativeToolTip": "ConnectFourServer\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAE4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T12:34:26.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Program.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Program.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Program.cs",
+              "RelativeToolTip": "ConnectFourServer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T18:05:42.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\About.cshtml",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Pages\\About.cshtml",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\About.cshtml",
+              "RelativeToolTip": "ConnectFourServer\\Pages\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T18:04:44.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameDtos.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\GameDtos.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Models\\GameDtos.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\GameDtos.cs",
+              "RelativeToolTip": "ConnectFourServer\\Models\\GameDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T18:04:22.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Players.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Players.cshtml.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Pages\\Players.cshtml.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Players.cshtml.cs",
+              "RelativeToolTip": "ConnectFourServer\\Pages\\Players.cshtml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAMwCIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T08:09:11.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Players.cshtml",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Players.cshtml",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Pages\\Players.cshtml",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Pages\\Players.cshtml",
+              "RelativeToolTip": "ConnectFourServer\\Pages\\Players.cshtml",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAswGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-16T08:04:13.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayersController.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Controllers\\PlayersController.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Controllers\\PlayersController.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Controllers\\PlayersController.cs",
+              "RelativeToolTip": "ConnectFourServer\\Controllers\\PlayersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T16:12:22.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MoveDecisionModels.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\MoveDecisionModels.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Models\\MoveDecisionModels.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\MoveDecisionModels.cs",
+              "RelativeToolTip": "ConnectFourServer\\Models\\MoveDecisionModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T16:09:54.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "ConnectFourServer\\Controllers\\GamesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T13:45:52.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Player.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Models\\Player.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Player.cs",
+              "RelativeToolTip": "ConnectFourServer\\Models\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T19:44:00.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Move.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Move.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Models\\Move.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Move.cs",
+              "RelativeToolTip": "ConnectFourServer\\Models\\Move.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T19:25:51.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Models\\Game.cs",
+              "RelativeToolTip": "ConnectFourServer\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T16:59:40.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ConnectFourServer\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T17:00:41.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ConnectFourServer\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\YosiBenShushan\\Desktop\\ConnectFour\\ConnectFourServer\\ConnectFourServer\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "ConnectFourServer\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-09T15:59:31.792Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

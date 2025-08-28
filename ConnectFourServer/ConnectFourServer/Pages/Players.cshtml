@@ -1,0 +1,384 @@
+﻿@page
+@model ConnectFourServer.Pages.PlayersModel
+@{
+    ViewData["Title"] = "Player Queries";
+}
+
+<h2>Player Queries</h2>
+
+<ul class="nav nav-tabs" id="playerTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all" type="button">All Players (Q17)</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#latestGame" type="button">
+            Latest Game Per Player (Q18)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#allGames" type="button">
+            All Games (Q19)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#distinctGames" type="button">
+            Distinct Games (Q20)
+        </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#gamesByPlayer" type="button">
+            Games by Selected Player (Q21)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#gamesPerPlayer" type="button">
+            Games Per Player (Q22)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#groupByGameCount" type="button">
+            Group by Games Played (Q23)
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#groupByCountry" type="button">Group by Country (Q24)</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#filterByCountry" type="button">Filter by Country</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#neverPlayed" type="button">Players Who Never Played</button>
+    </li>
+    <!-- Add more tabs later -->
+
+
+</ul>
+
+<div class="tab-content mt-3">
+
+    <!-- All Players (Q17)-->
+    <div class="tab-pane fade show active" id="all">
+        <p>This query displays <strong>all registered players</strong> in the system.</p>
+
+        <form method="get" class="mb-3">
+            <input type="hidden" name="activeTab" value="all" />
+            <input type="hidden" name="country" value="@Model.SelectedCountry" />
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sortInsensitive" id="sortInsensitive"
+                       value="true" @(Model.SortInsensitive ? "checked" : "") onchange="this.form.submit()" />
+                <label class="form-check-label" for="sortInsensitive">
+                    Sort by Name (not case-sensitive)
+                </label>
+            </div>
+        </form>
+
+        @await Html.PartialAsync("_PlayersTable", Model.AllPlayers)
+    </div>
+
+    <!-- latest Game Of each player (Q18)-->
+    <div class="tab-pane fade" id="latestGame">
+        <p>This query displays <strong>the most recent game date</strong> for each player who has played at least one game. <strong>(Sorted by Name CaseSensitive)</strong></p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    
+                    <th>Latest Game Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model.LatestGamePerPlayer)
+                {
+                    <tr>
+                        <td>@row.Player.Name</td>
+                        
+                        <td>@row.LatestDate.ToString("g")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- All Games (Q19)-->
+    <div class="tab-pane fade" id="allGames">
+        <p>This query shows <strong>all games in the system</strong> with full details, including the player who played each game.</p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Game ID</th>
+                    <th>Player Name</th>
+                    <th>Identifier</th>
+                    <th>Start Time</th>
+                    <th>Moves</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var game in Model.AllGames)
+                {
+                    <tr>
+                        <td>@game.Id</td>
+                        <td>@game.Player?.Name</td>
+                        <td>@game.Player?.Identifier</td>
+                        <td>@game.StartTime</td>
+                        <td>
+                            @if (game.Moves != null && game.Moves.Any())
+                            {
+                                <ul class="mb-0 ps-3">
+                                    @foreach (var move in game.Moves.OrderBy(m => m.Timestamp))
+                                    {
+                                        <li>@(move.Who == 1 ? "Player" : "Server") → Col: @move.Column, Row: @move.Row</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <span>No moves</span>
+                            }
+                        </td>
+                        <td>
+                            <form method="post" asp-page-handler="DeleteGame" asp-route-id="@game.Id" onsubmit="return confirm('Are you sure you want to delete this game?');">
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    
+
+
+    <!-- Filter by Country -->
+    <div class="tab-pane fade" id="filterByCountry">
+        <p>This query allows you to <strong>select a country</strong> and display only the players registered from that country.</p>
+
+        <form method="get" class="mb-3">
+            <select name="country" class="form-select" onchange="this.form.submit()">
+                <option disabled selected>Select a country</option>
+                @foreach (var c in Model.AvailableCountries)
+                {
+                    <option value="@c">@c</option>
+                }
+            </select>
+        </form>
+
+        @if (Model.FilteredPlayers != null)
+        {
+            <h5>Players from: @Model.SelectedCountry</h5>
+            @await Html.PartialAsync("_PlayersTable", Model.FilteredPlayers)
+        }
+    </div>
+
+
+    <!-- Players Who Never Played -->
+    <div class="tab-pane fade" id="neverPlayed">
+        <p>This query lists players who <strong>registered but never played a game</strong>.</p>
+        @await Html.PartialAsync("_PlayersTable", Model.PlayersWhoNeverPlayed)
+    </div>
+
+
+    <!-- Players Grouped by Number of Games Played -->
+    <div class="tab-pane fade" id="groupByGameCount">
+        <p>This query shows <strong>groups of players based on how many games they played</strong>.</p>
+
+        @foreach (var group in Model.PlayersByGameCount.OrderByDescending(g => g.Key))
+        {
+            <h5>Players who played @group.Key @((group.Key == 1) ? "game" : "games")</h5>
+            @await Html.PartialAsync("_PlayersTable", group.ToList())
+        }
+    </div>
+   
+    <!-- games By Player selected (from ComboBox) -->
+    <div class="tab-pane fade" id="gamesByPlayer">
+        <p>Select a player to <strong>see all games they played</strong>.</p>
+
+        <form method="get" class="mb-3">
+            <input type="hidden" name="activeTab" value="gamesByPlayer" />
+            <select name="selectedPlayerId" class="form-select" onchange="this.form.submit()">
+                <option disabled selected>Select a player</option>
+                @foreach (var player in Model.AllPlayers.OrderBy(p => p.Name))
+                {
+                    bool isSelected = Model.SelectedPlayerId == player.Id;
+                    bool hasNoGames = player.Games == null || !player.Games.Any();
+
+                    if (hasNoGames)
+                    {
+                        if (isSelected)
+                        {
+                            <option value="@player.Id" selected disabled>
+                                @player.Name (#@player.Identifier) - No Games
+                            </option>
+                        }
+                        else
+                        {
+                            <option value="@player.Id" disabled>
+                                @player.Name (#@player.Identifier) - No Games
+                            </option>
+                        }
+                    }
+                    else
+                    {
+                        if (isSelected)
+                        {
+                            <option value="@player.Id" selected>
+                                @player.Name (#@player.Identifier) - @player.Games.Count() Games
+                            </option>
+                        }
+                        else
+                        {
+                            <option value="@player.Id">
+                                @player.Name (#@player.Identifier) - @player.Games.Count() Games
+                            </option>
+                        }
+                    }
+                }
+
+            </select>
+        </form>
+
+        @if (Model.GamesOfSelectedPlayer != null && Model.GamesOfSelectedPlayer.Any())
+        {
+            <h5>Games played by: @Model.SelectedPlayer?.Name</h5>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Start Time</th>
+                        <th>Moves</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var game in Model.GamesOfSelectedPlayer)
+                    {
+                        <tr>
+                            <td>@game.StartTime</td>
+                            <td>
+                                @if (game.Moves != null && game.Moves.Any())
+                                {
+                                    <ul class="mb-0 ps-3">
+                                        @foreach (var move in game.Moves.OrderBy(m => m.Timestamp))
+                                        {
+                                            <li>@(move.Who == 1 ? "Player" : "Server") → Col: @move.Column, Row: @move.Row</li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <span>No moves</span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+    <!-- Games Per Player (Q22) -->
+    <div class="tab-pane fade" id="gamesPerPlayer">
+        <p>This query displays <strong>each player and how many games they have played</strong>.</p>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Number of Games</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pair in Model.GamesPerPlayer.OrderByDescending(p => p.GameCount))
+                {
+                    <tr>
+                        <td>@pair.PlayerName</td>
+                        <td>@pair.GameCount</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Grouped by Country (Q24)-->
+    <div class="tab-pane fade" id="groupByCountry">
+        <p>This query <strong>groups players by country</strong> and shows them under their respective country headers.</p>
+        @foreach (var group in Model.PlayersByCountry)
+        {
+            <h5>@group.Key (@group.Count())</h5>
+            @await Html.PartialAsync("_PlayersTable", group.ToList())
+        }
+    </div>
+    <!-- Distinct Games (Q20) -->
+    <div class="tab-pane fade" id="distinctGames">
+        <p>This query shows <strong>unique games</strong> per player, based on start time and result.</p>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Game ID</th>
+                    <th>Player</th>
+                    <th>Start Time</th>
+                    <th>Result</th>
+                    <th>Moves</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var game in Model.DistinctGames)
+                {
+                    <tr>
+                        <td>@game.Id</td>
+                        <td>@game.Player?.Name</td>
+                        <td>@game.StartTime</td>
+                        <td>@game.Result</td>
+                        <td>
+                            @if (game.Moves != null && game.Moves.Any())
+                            {
+                                <ul class="mb-0 ps-3">
+                                    @foreach (var move in game.Moves.OrderBy(m => m.Timestamp))
+                                    {
+                                        <li>@(move.Who == 1 ? "Player" : "Server") → Col: @move.Column, Row: @move.Row</li>
+                                    }
+                                </ul>
+                            }
+                            else
+                            {
+                                <span>No moves</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        
+        // Store tab in localStorage on click
+        const tabs = document.querySelectorAll('button[data-bs-toggle="tab"]');
+        tabs.forEach(tab => {
+            tab.addEventListener('shown.bs.tab', e => {
+                localStorage.setItem('activePlayerTab', e.target.getAttribute('data-bs-target'));
+            });
+        });
+
+        // Restore tab from localStorage
+        const savedTab = localStorage.getItem('activePlayerTab');
+        if (savedTab) {
+            const triggerEl = document.querySelector(`button[data-bs-target="${savedTab}"]`);
+            if (triggerEl) new bootstrap.Tab(triggerEl).show();
+        }
+        
+
+    </script>
+}

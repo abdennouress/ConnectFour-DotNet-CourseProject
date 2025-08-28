@@ -1,0 +1,92 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Connect Four - Home";
+}
+
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #007bff, #6610f2);
+        color: white;
+        border-radius: 20px;
+        padding: 60px 40px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        margin-bottom: 60px;
+    }
+
+    .animated-icon {
+        font-size: 2.5rem;
+        animation: bounce 2s infinite;
+    }
+
+    @@keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+    }
+
+    .custom-list li::before {
+        content: "✅ ";
+        color: limegreen;
+        font-weight: bold;
+    }
+
+    .image-preview {
+        border-radius: 15px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+        .image-preview:hover {
+            transform: scale(1.05);
+        }
+</style>
+
+<div class="container mt-5">
+    <div class="hero-section text-center">
+        <h1 class="display-3 fw-bold mb-3">🎮 Connect Four Madness!</h1>
+        <p class="lead fs-5 mb-4">Strategy, speed, and fun in a modern twist of the classic Connect Four game. Can you beat the PC? 🤖</p>
+        <span class="animated-icon">👇</span>
+    </div>
+
+    <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-7">
+            <h2 class="fw-bold text-primary mb-3">💡 About the Project</h2>
+            <p class="fs-5">
+                This system was created as a final project for the <strong>.NET Web Programming Course</strong> at <strong>Afeka College of Engineering</strong>.
+                It showcases a full-stack system including web registration, a beautiful WinForms client, animations, and a smart game engine.
+            </p>
+
+            <h3 class="fw-semibold text-success mt-4 mb-2">⚙️ How It Works</h3>
+            <ul class="custom-list fs-5">
+                <li>Players register via the web using Razor Pages 💻</li>
+                <li>The WinForms client communicates with the server using Web APIs 🔄</li>
+                <li>Every move is saved to the database 📊</li>
+            </ul>
+
+            <div class="mt-4">
+                <a class="btn btn-lg btn-danger shadow" href="/Register">
+                    🚀 Register & Start Playing
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+            <img src="~/images/game.png" alt="Connect Four Game Preview"
+                 class="img-fluid image-preview" style="max-height: 320px;">
+        </div>
+    </div>
+
+    <div class="text-center mt-5 pt-4 border-top">
+        <p class="text-muted">
+            Created with ❤️ by Noam Ben Binyamin & Yosi Ben Shushan <br />
+            © 2025 Afeka College of Engineering
+        </p>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿
+@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "About the Assignees";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold text-primary mb-4">@ViewData["Title"]</h1>
+        <p class="lead">Meet the brilliant minds behind this project 🎯</p>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <img src="~/images/noam.png" alt="Noam Ben Binyamin" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4 class="card-title">Noam Ben Binyamin</h4>
+                    <p class="text-muted">ID: <strong>315006254</strong></p>
+                    <p class="card-text text-muted">Lead Developer</p>
+                    <span class="badge bg-success">Frontend & Animation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center">
+                    <img src="~/images/yosi.png" alt="Yosi Ben Shushan" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4 class="card-title">Yosi Ben Shushan</h4>
+                    <p class="text-muted">ID: <strong>316049543</strong></p>
+                    <p class="card-text text-muted">Server & Architecture</p>
+                    <span class="badge bg-primary">API & Game Logic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <p class="text-muted">Together, we built something fun and powerful. Let’s Connect Four! 🚀</p>
+    </div>
+</div>
